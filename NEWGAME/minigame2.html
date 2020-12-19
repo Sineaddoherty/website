@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+	<html lang="en">
+	
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Number Guesser MINi game </title>
+		<link rel="stylesheet" href= "guessgame.css">
+				
+		</head>
+			
+				
+		 <body onload = "init()">
+	    <h1>Guess the number - mini game </h1>
+				
+		
+		<body>		
+	<form>
+		<div id = "output">
+		I’m thinking of a number between 0 and 10.
+		Guess my number, wrong  or correct
+	    Here is a clue: EVEN
+		</div>
+		<label for="quantity"> Submit on answr between 1-10:</label>
+					
+	</form>
+	
+	<h2>
+	<!-- <button type = "button" onclick=document.write("wrong")>Number 1</button> -->
+	<button onclick="myFunction1()">number 1</button>
+	<button onclick="myFunction1()">Number 2</button> 
+	<button onclick="myFunction1()">Number 3</button> 
+    <button onclick="myFunction1()">Number 4</button> 
+    <button onclick="myFunction1()">Number 5</button> 
+    <button onclick="myFunction1()">Number 6</button> 
+	 <button onclick="myFunction1()">Number 7</button> 
+	 <button onclick="xFunction1()">Number 8 </button>
+	 <button onclick="myFunction1()">Number 9</button> 
+     <button onclick="myFunction1()">Number 10</button> 
+	<h2/>
+	
+	<script>
+function myFunction1() {
+  alert("WORNG!");
+}
+
+function xFunction1() {
+  alert("WINNER!");
+}
+</script>
+	
+	
+	<img id="img-swap" src="pics/shop.jpg" alt="shop" style="width:20%">
+	
+	
+		<h3>Task 1</h3>
+		<p id="task1">
+		Tap to see if you get a free haircut!
+		</p>
+		<button onclick="swap()" >Task 1</button>
+		
+		
+		
+		<h3>Task 2</h3>
+		<p id="task2">
+		Tap to see if you get a free haircut!
+		</p>
+		<button onclick="swasp()">Task 2</button>
+		
+		<h3>Task 3</h3>
+		<p id="task1">
+		Tap to see if you get a free haircut!
+		</p>
+		<button onclick="swap()" >Task 3</button>
+		
+		
+		
+		
+	<script>		
+	function swasp() {
+	  //document.getElementsById("img-swap").setAttributie("src", "pics/haircut.png");
+	  //document.getElementsById("img-swap").setAttributie("src", "pics/haircut.png");
+	  //document.getElementsById("img-swap").setAttributie("src", "pics/haircut.png");
+	
+	var r = Math.floor(Math.random() * 2) + 1;
+	if (r === 1){
+		document.getElementById("img-swap").setAttribute("src","pics/haircut.png") ;
+	} else if (r === 2){
+		document.getElementById("img-swap").setAttribute("src","pics/shop.jpg");
+    }
+	
+}
+//task 1 changes the image displayed, it sets the attibute src to another image
+// Task 1 end
+
+	function swap() {
+	  //document.getElementsById("img-swap").setAttributie("src", "pics/haircut.png");
+	  //document.getElementsById("img-swap").setAttributie("src", "pics/haircut.png");
+	  //document.getElementsById("img-swap").setAttributie("src", "pics/haircut.png");
+	
+	var r = Math.floor(Math.random() * 2) + 1;
+	if (r === 1){
+		document.getElementById("img-swap").setAttribute("src","pics/sorry.jpg") ;
+	} else if (r === 2){
+		document.getElementById("img-swap").setAttribute("src","pics/shop.jpg");
+    }
+	
+}
+//task 1 changes the image displayed, it sets the attibute src to another image
+// Task 1 end
+	</script>
+		
+		
+     <button>
+			<a href="index.html">Back to homepage</a>
+			 </button>
+						
+						  
+			
+		 
+	</body>
+	</html>

@@ -1,0 +1,37 @@
+
+
+body{
+	background-color: gray
+}
+
+
+head{
+	float: right;
+}
+
+
+
+h1{
+	float: top;
+	background-color: red;
+	
+}
+
+h2{
+	float: bottom;
+    background-color: lime;
+}
+
+h3{
+	float: bottom;
+    background-color: lime;
+}
+
+<style>
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+</style>

@@ -1,0 +1,27 @@
+
+
+body{
+	background-color: grey;
+}
+
+
+
+head{
+	float: right;
+}
+
+form{
+	background-color: #20b2AA;
+	
+}
+
+h1{
+	float: top;
+	background-color: red;
+	
+}
+
+h2{
+	float: bottom;
+    background-color: lime;
+}
